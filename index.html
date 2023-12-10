@@ -1,0 +1,88 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <title>Home Page - TerraSense</title>
+        <script>
+            window.addEventListener('load', lol)
+            document.addEventListener("click",lol)
+            function lol() {
+                // Obtiene el botón y la sección a la que se desea desplazar
+                var scrollButton = document.getElementById("scroll");
+                var scrolledSection = document.getElementById("scrolled");
+
+                // Agrega un listener al botón
+                scrollButton.addEventListener("click", function() {
+                    // Realiza un desplazamiento suave hasta la sección deseada
+                scrolledSection.scrollIntoView({ behavior: "smooth" });
+                });
+            };
+        </script>
+    </head>
+    <body class="index">
+        <header>
+            <div>
+                <a href="">
+                    <img class="logo" src="remove.png" alt="Logo Image" title="TerraSense" >
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="guía.html">Guía</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="info.html">Información</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="m">
+            <h1>Bienvenido a TerraSense</h1>
+            <section>
+
+                <button  id="scroll">Presionar</button>
+
+            </section>
+
+            <section id="scrolled" class="sec2">
+                <h2>
+                    Qué es TerraSense?
+                </h2>
+                <article  class="content">
+                    <p class="text1">
+                        TerraSense es una Aplicación de Escritorio la cual proporciona página web que te permite consultar y obtener información relevante sobre el clima en ubicación.    
+                        Puedes ver los datos climáticos de tu ubicación especifica ,así como también obtener una lista de Cultivos Recomendados para plantar.
+                    </p>
+                </article>
+            </section>
+
+            <section class="div">
+                <article>
+                    <h2>
+                        La Variabilidad Climatica y Selección de Cultivos
+                    </h2>
+                    <p>
+                        Los agricultores se enfrentan a desafíos constantes debido a la variabilidad climática, que incluye cambios impredecibles en las condiciones meteorológicas y patrones de lluvia. Esta variabilidad puede afectar significativamente el rendimiento de los cultivos y la rentabilidad de las explotaciones agrícolas. Los agricultores a menudo luchan por tomar decisiones informadas sobre qué cultivos plantar en sus campos, especialmente cuando el clima es incierto y los patrones climáticos están en constante cambio. Plantar el cultivo equivocado en una temporada puede llevar a pérdidas económicas significativas y afectar negativamente la seguridad alimentaria
+                    </p>
+                </article>
+
+                <aside>
+                    <h2>
+                        ¿Cuál sería el impacto en la agricultura Boliviana de implementar un sistema selector de cultivos en respuesta a la variabilidad climática?
+                    </h2>
+                    <p> 
+                        La adopción de un sistema selector de cultivos en Bolivia puede fortalecer la resiliencia del sector agrícola ante impactos a largo plazo, considerando patrones climáticos cambiantes y la elección de cultivos adaptados. A nivel local, la preferencia por cultivos más resistentes mejoraría la productividad y estabilidad, reduciendo la vulnerabilidad de los agricultores a eventos climáticos extremos. A nivel regional, esta estrategia influiría en la diversificación agrícola y en la distribución geográfica de cultivos, optimizando la producción y mitigando riesgos asociados con la variabilidad climática.
+                    </p>
+                </aside>
+            </section>
+            <footer class= "footer">
+                <div>
+                    &lt; &copf; Copyright - TerraSense 2023 &gt;
+                </div>
+            </footer >
+        </main>
+        
+    </body>
+    </html>
